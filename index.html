@@ -25,50 +25,60 @@
 
   <body>
     <header class="header">
-      <div class="container header-container">
-        <nav class="header-nav">
-          <a href="./index.html" class="link logo"
-            ><span class="logo-title">Web</span>Studio</a
-          >
-
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="link header-link current" href="./index.html">Студия</a>
+      <div class="container header__container">
+        <nav class="nav">
+          <a lang="en" class="link logo" href=""
+            >Web<span class="logo__second">Studio</span>
+          </a>
+          <ul class="list nav__menu">
+            <li class="nav__item">
+              <a class="link nav__link current nav__link--clickableArea" href=""
+                >Студия</a
+              >
             </li>
-            <li class="header-item">
-              <a class="link header-link" href="./portfolio.html">Портфолио</a>
+            <li class="nav__item">
+              <a
+                class="link nav__link nav__link--clickableArea"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="header-item">
-              <a class="link header-link" href="">Контакты</a>
+            <li class="nav__item">
+              <a class="link nav__link nav__link--clickableArea" href=""
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
-
+       <!--  =================================================================== button-mobile-menu ================================================ -->
         <button type="button" class="mobile-menu-open" data-menu-open>
           <svg class="mobile-menu-open__icon" width="40" height="40">
             <use href="./img/sprite.svg#icon-menu"></use>
           </svg>
         </button>
 
-        <ul class="header-adress list">
-          <li class="header-item">
-            <a class="link header-email" href="mailto:info@devstudio.com">
-              <svg class="icon-mail" width="16px" height="12px">
-                <use href="./img/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
+        <ul class="list contacts">
+          <li class="contacts__item">
+            <a
+              class="link contacts__link contacts__link--clickableArea"
+              href="mailto:info@devstudio.com"
+              ><svg class="envelope" width="16" height="12">
+                <use href="./img/sprite.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
             >
           </li>
-          <li class="header-item">
-            <a class="link header-phone" href="tel:+380961111111"
-              ><svg class="icon-phone" width="10px" height="16px">
-                <use href="./img/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
+          <li class="contacts__item">
+            <a
+              class="link contacts__link contacts__link--clickableArea"
+              href="tel:+380961111111"
+              ><svg class="phone" width="10" height="16">
+                <use href="./img/sprite.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
             >
           </li>
         </ul>
       </div>
+
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <button class="mobile-menu__btn" data-menu-close>
@@ -138,76 +148,66 @@
         </div>
       </section>
 
-      <!-- description -->
+      <!--   -- ======================================================  feature section ============================================-->
+      -->
 
-      <!--    <section class="feature section">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="list feature-icon-list">
-            <li class="feature-icon-item">
-              <div class="advantage-icon">
-                <svg class="feature-icon" width="70px" height="70px">
+          <ul class="list features">
+            <li class="features__item">
+              <div class="features__icons">
+                <svg width="70" height="70">
                   <use href="./img/sprite.svg#icon-Group"></use>
                 </svg>
               </div>
-            </li>
-            <li class="feature-icon-item">
-              <div class="advantage-icon">
-                <svg class="feature-icon" width="70px" height="70px">
-                  <use href="./img/sprite.svg#icon-clock"></use>
-                </svg>
-              </div>
-            </li>
-            <li class="feature-icon-item">
-              <div class="advantage-icon">
-                <svg class="feature-icon" width="70px" height="70px">
-                  <use href="./img/sprite.svg#icon-diagram"></use>
-                </svg>
-              </div>
-            </li>
-            <li class="feature-icon-item">
-              <div class="advantage-icon">
-                <svg class="feature-icon" width="70px" height="70px">
-                  <use href="./img/sprite.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-            </li>
-          </ul>
-
-          <ul class="feature-list list">
-            <li class="feature-item">
-              <h3 class="feature-title">Внимание к деталям</h3>
-              <p class="feature-description">
+              <h3 class="features__subtitle">Внимание к деталям</h3>
+              <p class="features__descr">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="feature-item">
-              <h3 class="feature-title">Пунктуальность</h3>
-              <p class="feature-description">
+            <li class="features__item">
+              <div class="features__icons">
+                <svg width="70" height="70">
+                  <use href="./img/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="features__subtitle">Пунктуальность</h3>
+              <p class="features__descr">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="feature-item">
-              <h3 class="feature-title">Планирование</h3>
-              <p class="feature-description">
+            <li class="features__item">
+              <div class="features__icons">
+                <svg width="70" height="70">
+                  <use href="./img/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="features__subtitle">Планирование</h3>
+              <p class="features__descr">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="feature-item">
-              <h3 class="feature-title">Современные технологии</h3>
-              <p class="feature-description">
+            <li class="features__item">
+              <div class="features__icons">
+                <svg width="70" height="70">
+                  <use href="./img/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="features__subtitle">Современные технологии</h3>
+              <p class="features__descr">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- section info -->
+    <!--   =================================================================== section info ==================================================== -->
 
       <!--      <section class="info-section">
         <div class="container">
