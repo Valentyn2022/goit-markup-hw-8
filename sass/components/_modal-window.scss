@@ -1,7 +1,7 @@
 .modal {
     position: absolute;
-    width: 528px;
-    height: 580px;
+    width: 450px;
+    height: 609px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -80,7 +80,7 @@
 
 .form-input {
     display: block;
-    width: 448px;
+    width: 370px;
     height: 40px;
     padding: 0;
     padding-left: 42px;
@@ -103,7 +103,7 @@ textarea {
     font-family: inherit;
     font-size: inherit;
     resize: none;
-    width: 448px;
+    width: 370px;
     height: 120px;
     outline: none;
     border-radius: 4px;
@@ -176,13 +176,13 @@ textarea {
 
 .policy-dsc {
     margin-right: 5px;
-    @include font(14px, 400, 24px);
+    @include font(12px, 400, 24px);
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
 
 .link-policy {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--accent-color);
@@ -202,4 +202,9 @@ textarea {
     letter-spacing: 0.06em;
     color: var(--main-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1200px) {
+    .form-btn {
+        padding: 10px 32px;
+    }
 }
