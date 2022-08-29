@@ -83,7 +83,7 @@
     }
 
     .contacts__link {
-        @include font(14px, 500, 16px);
+        @include font(12px, 500, 14px);
         letter-spacing: 0.02em;
         color: var(--secondary-text-color);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
