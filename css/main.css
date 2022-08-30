@@ -918,11 +918,6 @@ button {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 480Px) {
-  .project-List__card:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 .backdrop {
   position: fixed;
   top: 0;
