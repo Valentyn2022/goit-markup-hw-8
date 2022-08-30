@@ -85,9 +85,9 @@
 
 
 
-.project-List__item:not(:last-child) {
+/* .project-List__item:not(:last-child) {
     margin-bottom: 30px;
-}
+} */
 
 .project-List__link {
     display: block;
@@ -135,4 +135,19 @@
         min-width: 370px;
     }
 }
-
+@media screen and (min-width: 768px) {
+    .filter-List {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .filter-List {
+            margin-bottom: 50px;
+}
+    
+}
+@media screen and (max-width: 768px) {
+    .project-List__card {
+        margin-bottom: 30px;
+    }
+}

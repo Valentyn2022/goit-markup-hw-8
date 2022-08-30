@@ -82,6 +82,7 @@
     display: block;
     width: 370px;
     height: 40px;
+    width: 100%;
     padding: 0;
     padding-left: 42px;
     outline: none;
@@ -207,4 +208,13 @@ textarea {
     .form-btn {
         padding: 10px 32px;
     }
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+textarea {
+    width: 448px;
+    height: 120px;
+}
+
 }

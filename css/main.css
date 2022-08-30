@@ -862,10 +862,9 @@ button {
   transform: translate(0, 0);
 }
 
-.project-List__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
+/* .project-List__item:not(:last-child) {
+    margin-bottom: 30px;
+} */
 .project-List__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -902,6 +901,26 @@ button {
   }
   .imgSize {
     min-width: 370px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter-List {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-List {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .project-List__card {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 480Px) {
+  .project-List__card:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 .backdrop {
@@ -1030,6 +1049,7 @@ button {
   display: block;
   width: 370px;
   height: 40px;
+  width: 100%;
   padding: 0;
   padding-left: 42px;
   outline: none;
@@ -1137,6 +1157,14 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .form-btn {
     padding: 10px 32px;
+  }
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  textarea {
+    width: 448px;
+    height: 120px;
   }
 }
 @media screen and (max-width: 768px) {
